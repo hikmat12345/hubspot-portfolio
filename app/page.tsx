@@ -138,39 +138,7 @@ export default async function Index() {
             </p>
           </div>
           <div className='space-x-2 flex justify-center slg:mt-8' >
-            <Link
-              target='_blank'
-              download={'/Hikmat-Resume.pdf'}
-              href={'/Hikmat-Resume.pdf'}
-              className='slg:hidden bg-gradient-to-r from-hubspot-teal to-hubspot-lightTeal bg-clip-text leading-[40px] tracking-[-0.05em] text-transparent sm:text-center     md:leading-[50px] md:tracking-[-0.07em]     lg:leading-[70px]'
-            >
-              <div className='pointer-events-none relative rounded-lg shadow-lg '>
-                <div className='relative isolate z-10 m-[-2px] overflow-hidden rounded-[inherit] p-[3px]'>
-                  <div className='animate-buttonStroke bg-buttonConicGradient absolute inset-0 origin-[center_center] blur-[4px] will-change-transform'></div>
-                  <div className='relative z-50'>
-                    <div className='flex items-center space-x-3 rounded-lg border border-[#ffffff10] bg-gray-100 px-4 font-bold text-gray-900 hover:bg-gray-200 dark:bg-[#17191c] dark:text-white'>
-                      <span>Download Resume</span>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='2.5px'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                        className='h-5 w-4'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M9 5l7 7-7 7'
-                        ></path>
-                      </svg>
 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
             <Link
               href={'https://calendly.com/hikmatullahit/30min'}
               target='_blank'
@@ -577,11 +545,10 @@ export default async function Index() {
                       </li>
                     </ol>
                     <a
-                      download={'/Hikmat-Resume.pdf'}
                       className='group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-blueGredient text-white hover:bg-purple-300  px-3 py-2 text-sm font-medium outline-offset-2 transition   active:bg-zinc-100 active:text-zinc-900/60 active:transition-none    dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:active:bg-zinc-800/50 dark:active:text-zinc-50/70'
-                      href={'/Hikmat-Resume.pdf'}
+                      href={'https://wa.me/923006115331'}
                     >
-                      Download CV
+                      Whatsapp me, Will send you updated CV.
                       <svg
                         viewBox='0 0 16 16'
                         fill='none'
@@ -661,39 +628,6 @@ export default async function Index() {
             </p>
           </div>
           <div className='space-x-2 flex justify-center slg:mt-8' >
-            <Link
-              target='_blank'
-              download={'/Hikmat-Resume.pdf'}
-              href={'/Hikmat-Resume.pdf'}
-              className='slg:hidden bg-gradient-to-r from-hubspot-teal to-hubspot-lightTeal bg-clip-text leading-[40px] tracking-[-0.05em] text-transparent sm:text-center     md:leading-[50px] md:tracking-[-0.07em]     lg:leading-[70px]'
-            >
-              <div className='pointer-events-none relative rounded-lg shadow-lg '>
-                <div className='relative isolate z-10 m-[-2px] overflow-hidden rounded-[inherit] p-[3px]'>
-                  <div className='animate-buttonStroke bg-buttonConicGradient absolute inset-0 origin-[center_center] blur-[4px] will-change-transform'></div>
-                  <div className='relative z-50'>
-                    <div className='flex items-center space-x-3 rounded-lg border border-[#ffffff10] bg-gray-100 px-4 font-bold text-gray-900 hover:bg-gray-200 dark:bg-[#17191c] dark:text-white'>
-                      <span>Download Resume</span>
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='2.5px'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                        className='h-5 w-4'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M9 5l7 7-7 7'
-                        ></path>
-                      </svg>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
             <Link
               href={'https://calendly.com/hikmatullahit/30min'}
               target='_blank'
