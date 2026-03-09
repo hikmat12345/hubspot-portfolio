@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* these are for the button with the moving gradient */
+  @keyframes buttonStroke {
+    0% {
+      transform: scaleX(8) scaleY(1.5) rotate(0deg);
+      opacity: 1;
+    }
+
+    to {
+      transform: scaleX(8) scaleY(1.5) rotate(1turn);
+      opacity: 1;
+    }
+  }
+
+  .animate-buttonStroke {
+    animation: buttonStroke 7s linear infinite;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .bg-buttonConicGradient {
+    background-image: conic-gradient(transparent 135deg, #1e5b5f 180deg, transparent 255deg),
+      conic-gradient(transparent -45deg, #ff4800 0deg, transparent 75deg);
+  }
+
+  .text-hover {
+    @apply transition-colors duration-300 hover:text-secondary;
+  }
+
+  .main-layout {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+/* min-h-screen	grid grid-rows-[auto_1fr_auto] */
+
+/* 
+https://www.joshwcomeau.com/css/custom-css-reset/ 
+The problem is that the vh unit doesn't work properly on mobile devices; 
+100vh will take up more than 100% of the screen real estate, because 
+mobile browsers do that thing where the browser UI comes and goes.
+*/
+@layer base {
+
+  html,
+  body,
+  #__next {
+    height: 100%;
+  }
+}
+
+.wpo-about-img {
+  position: relative;
+  padding: 30px;
+
+  border-radius: 6px;
+}
+
+.wpo-about-img .icon-1 {
+  position: absolute;
+  left: 0;
+  top: 2%;
+  width: 56px;
+  height: 61px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.wpo-about-img .icon-2 {
+  position: absolute;
+  right: 0;
+  top: 2%;
+  width: 56px;
+  height: 61px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.wpo-about-img .icon-3 {
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+  width: 56px;
+  height: 61px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 15px;
+}
+
+.wpo-about-img .project {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+  width: 181px;
+  height: 59px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 19px;
+}
+
+.wpo-about-content .wpo-about-funfact .grid,
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid {
+  background: linear-gradient(180deg, rgba(255, 72, 0, 0.6), rgba(30, 91, 95, 0.6) 67.59%);
+  flex-basis: 20.33%;
+  border-radius: 12px;
+  margin: 0 11px 30px;
+}
+
+.wpo-about-content .wpo-about-funfact .grid:nth-child(2),
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(2) {
+  background: linear-gradient(180deg, rgba(30, 91, 95, 0.6), rgba(52, 71, 92, 0.6) 67.59%);
+}
+
+.wpo-about-content .wpo-about-funfact .grid .grid-inner h3,
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid .grid-inner h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.wpo-about-content .wpo-about-funfact .grid .grid-inner,
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid .grid-inner {
+  padding: 40px;
+
+  margin: 3px 3px 0;
+  text-align: center;
+  border-radius: 12px;
+}
+
+
+.wpo-about-content .wpo-about-funfact,
+.wpo-about-area .wpo-about-content .wpo-about-funfact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.wpo-about-content .wpo-about-funfact .grid:nth-child(6),
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(6) {
+  background: linear-gradient(180deg, rgba(255, 72, 0, 0.6), rgba(52, 71, 92, 0.6) 67.59%);
+}
+
+.wpo-about-content .wpo-about-funfact .grid:nth-child(5),
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(5) {
+  background: linear-gradient(180deg, rgba(30, 91, 95, 0.6), rgba(52, 71, 92, 0.6) 67.59%);
+}
+
+.wpo-about-area-s2 .wpo-about-content .wpo-about-funfact .grid:nth-child(4),
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(4) {
+  background: linear-gradient(180deg, rgba(255, 72, 0, 0.6), rgba(52, 71, 92, 0.6) 67.59%);
+}
+
+.wpo-about-content .wpo-about-funfact .grid:nth-child(8) {
+  background: linear-gradient(180deg, rgba(30, 91, 95, 0.6), rgba(52, 71, 92, 0.6) 67.59%);
+}
+
+.wpo-about-content .wpo-about-funfact .grid:nth-child(3),
+.wpo-about-area .wpo-about-content .wpo-about-funfact .grid:nth-child(3) {
+  background: linear-gradient(180deg, rgba(52, 71, 92, 0.6), rgba(30, 91, 95, 0.6) 67.59%);
+}
+
+.wpo-about-area-s2 {
+  background: #1e5b5f;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+/* banner section */
